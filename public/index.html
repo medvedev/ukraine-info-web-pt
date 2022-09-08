@@ -4,25 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 
-<head>
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-        const firebaseConfig = {
-            apiKey: "AIzaSyAbdAtYVZKuS0pzpZ1BU8u467LwaRwdUZE",
-            authDomain: "web-ukraine-qr.firebaseapp.com",
-            projectId: "web-ukraine-qr",
-            storageBucket: "web-ukraine-qr.appspot.com",
-            messagingSenderId: "956114026628",
-            appId: "1:956114026628:web:8e7af579b5bcf0764242d1",
-        };
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-</head>
-
 <body>
     <main>
         <input id="tab_pt" type="radio" name="tabs" checked>
@@ -77,5 +58,22 @@
         </section>
     </main>
 </body>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    const firebaseConfig = {
+        apiKey: "AIzaSyAbdAtYVZKuS0pzpZ1BU8u467LwaRwdUZE",
+        authDomain: "web-ukraine-qr.firebaseapp.com",
+        projectId: "web-ukraine-qr",
+        storageBucket: "web-ukraine-qr.appspot.com",
+        messagingSenderId: "956114026628",
+        appId: "1:956114026628:web:8e7af579b5bcf0764242d1",
+    };
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
 
 </html>
