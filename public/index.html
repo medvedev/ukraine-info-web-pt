@@ -1,85 +1,46 @@
 <!DOCTYPE html>
-<html>
 <title>UA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<script type="module" src="magic.js" defer></script>
 
-<body>
-    <main>
-        <input id="tab_pt" type="radio" name="tabs" checked>
-        <label for="tab_pt">PT</label>
+<main>
+    <input id="tab_pt" type="radio" name="tabs" checked>
+    <label for="tab_pt">PT</label>
 
-        <input id="tab_en" type="radio" name="tabs">
-        <label for="tab_en">EN</label>
+    <input id="tab_en" type="radio" name="tabs">
+    <label for="tab_en">EN</label>
 
-        <input id="tab_ua" type="radio" name="tabs">
-        <label for="tab_ua">UA</label>
+    <input id="tab_ua" type="radio" name="tabs">
+    <label for="tab_ua">UA</label>
 
-        <section id="content_pt">
-            <p>
-                Olá! Obrigado pela sua curiosidade.
-            </p>
-            <p>
-                Sou o Ucrâniano que usa esta forma para partilhar a palavra sobre o meu país, a guerra que a Rússia
-                começou contra a minha Pátria.
-            </p>
-            <p>
-                Algumas pessoas pensam que a guerra começou em 2022. Não é verdade. Começou com a anexação da Crimeia
-                (iniciada em 20.02.2014, ou seja, há mais de 8 anos), ou seja, há mais de 8 anos. Para mais pormenores
-                pode consultar uma página wikipedia sobre <a
-                    href="https://pt.wikipedia.org/wiki/Guerra_Russo-Ucraniana">A Guerra Russo-Ucraniana</a>
-            </p>
-        </section>
+    <section id="content_pt">
+        <p>Olá! Obrigado pela sua curiosidade.
+        <p>Sou o Ucrâniano que usa esta forma para partilhar a palavra sobre o meu país, a guerra que a Rússia
+            começou contra a minha Pátria.
+        <p>Algumas pessoas pensam que a guerra começou em 2022. Não é verdade. Começou com a anexação da Crimeia
+            (iniciada em 20.02.2014, ou seja, há mais de 8 anos), ou seja, há mais de 8 anos. Para mais pormenores
+            pode consultar uma página wikipedia sobre <a href="https://pt.wikipedia.org/wiki/Guerra_Russo-Ucraniana">A
+                Guerra Russo-Ucraniana</a>
+    </section>
 
-        <section id="content_en">
-            <p>
-                Hi and thank you for your curiosity.
-            </p>
-            <p>                
-                I'm a Ukrainian who uses this way to share the word about my country, the war that Russia started
-                against my Homeland.
-            </p>
-            <p>
-                Some people think that the war started in 2022. It's not true. It started with the annexation of Crimea
-                (started on 20.02.2014, i.e. more than 8 years ago). For more details you can check a wikipedia page
-                about <a href="https://en.wikipedia.org/wiki/Russo-Ukrainian_War">The Russo-Ukrainian war</a>
-            </p>
-        </section>
+    <section id="content_en">
+        <p>Hi! Thank you for your curiosity.
+        <p>I'm a Ukrainian who uses this way to share the word about my country, the war that Russia started
+            against my Homeland.
+        <p>Some people think that the war started in 2022. It's not true. It started with the annexation of Crimea
+            (started on 20.02.2014, i.e. more than 8 years ago). For more details you can check a wikipedia page
+            about <a href="https://en.wikipedia.org/wiki/Russo-Ukrainian_War">The Russo-Ukrainian war</a>
+    </section>
 
-        <section id="content_ua">
-            <p>
-                Вітаю і дякую за вашу цікавість.
-            </p>
-            <p>                
-                Я - українець що в такий спосіб намагається поширити в світі інформацію про Україну та про війну яку
-                Росія розпочала проти моєї Батьківщини.
-            </p>
-            <p>
-                Деякі вважають що війна розпочалась у 2022. Це не правда. Вона почалась з анексії Криму (початок
-                операції: 20.02.2014, тобто більше 8 років тому). Щоб дізнатись більше, ви можете прочитати статтю на
-                Вікіпедії присвячену <a
-                    href="https://uk.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%B2%D1%96%D0%B9%D0%BD%D0%B0_(%D0%B7_2014)">Російсько-Українській
-                    війні</a>
-            </p>
-        </section>
-    </main>
-</body>
-
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-    const firebaseConfig = {
-        apiKey: "AIzaSyAbdAtYVZKuS0pzpZ1BU8u467LwaRwdUZE",
-        authDomain: "web-ukraine-qr.firebaseapp.com",
-        projectId: "web-ukraine-qr",
-        storageBucket: "web-ukraine-qr.appspot.com",
-        messagingSenderId: "956114026628",
-        appId: "1:956114026628:web:8e7af579b5bcf0764242d1",
-    };
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-</script>
-
-</html>
+    <section id="content_ua">
+        <p>Вітаю! Дякую за вашу цікавість.
+        <p>Я - українець що в такий спосіб намагається поширити в світі інформацію про Україну та про війну яку
+            Росія розпочала проти моєї Батьківщини.
+        <p>Деякі вважають що війна розпочалась у 2022. Це не правда. Вона почалась з анексії Криму (початок
+            операції: 20.02.2014, тобто більше 8 років тому). Щоб дізнатись більше, ви можете прочитати статтю на
+            Вікіпедії присвячену <a
+                href="https://uk.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%B2%D1%96%D0%B9%D0%BD%D0%B0_(%D0%B7_2014)">Російсько-Українській
+                війні</a>
+    </section>
+</main>
