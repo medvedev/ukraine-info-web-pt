@@ -9,6 +9,7 @@ const firebaseConfig = {
     storageBucket: "web-ukraine-qr.appspot.com",
     messagingSenderId: "956114026628",
     appId: "1:956114026628:web:8e7af579b5bcf0764242d1",
+    measurementId: "G-XQECS6BXWP"
 };
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
