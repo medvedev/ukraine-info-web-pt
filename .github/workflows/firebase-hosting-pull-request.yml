@@ -11,11 +11,9 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 14
-          cache: 'npm'
-          # cache-dependency-path: '**/package-lock.json'
-      - run: npm i -g pug-cli
-      - run: pug ./src/index.pug -o public       
+          node-version: 16
+      - name: Build HTML from Pug
+        run: ./github-build.sh    
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
