@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -73,16 +77,16 @@ label:hover {
   cursor: pointer;
 }
 
-input:checked + label {
+input:checked+label {
   color: #555;
   border: 1px solid #ddd;
   border-top: 2px solid orange;
   border-bottom: 1px solid #fff;
 }
 
-#tab_pt:checked ~ #content_pt,
-#tab_en:checked ~ #content_en,
-#tab_ua:checked ~ #content_ua {
+#tab_pt:checked~#content_pt,
+#tab_en:checked~#content_en,
+#tab_ua:checked~#content_ua {
   display: block;
 }
 
@@ -96,6 +100,7 @@ input:checked + label {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 500px) {
   label {
     padding: 15px;
