@@ -18,7 +18,7 @@ jobs:
           # cache-dependency-path: '**/package-lock.json'
       - run: npm i -g pug-cli
       - run: pug ./src/index.pug -o public 
-      - run: ls -l /home/runner/.npm       
+      - run: ls -l /home/runner/.npm/_cacache       
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
