@@ -6,9 +6,9 @@ script(defer, type='module' src='magic.js')
 main 
     input#tab_pt(checked, type='radio' name='tabs')
     label(for="tab_pt") PT 
-    input#tab_en(checked, type='radio' name='tabs')
+    input#tab_en(type='radio' name='tabs')
     label(for="tab_en") EN
-    input#tab_ua(checked, type='radio' name='tabs')
+    input#tab_ua(type='radio' name='tabs')
     label(for="tab_ua") UA
     section#content_pt
         include includes/content-pt.pug 
