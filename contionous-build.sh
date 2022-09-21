@@ -1,2 +1,2 @@
 #!/bin/bash
-pug -w ./src/index.pug -o ./public -P
+pug -O options.js -w ./src/index.pug -o ./public -P 

@@ -25,3 +25,27 @@ for (var i = 0; i < tabInputs.length; i++) {
         },
         false);
 }
+
+var nextArrows = document.getElementsByClassName("slide__next");
+
+for (var i = 0; i < nextArrows.length; i++) {
+    nextArrows[i].addEventListener(
+        'click',
+        async function (event) {
+            const langCode = event.target.id.substring(11);
+            logEvent(analytics, "slide_next", { lang_code: langCode, to: event.target.href.substring(9, 10)});
+        },
+        false);
+}
+
+var prevArrows = document.getElementsByClassName("slide__prev");
+
+for (var i = 0; i < prevArrows.length; i++) {
+    prevArrows[i].addEventListener(
+        'click',
+        async function (event) {
+            const langCode = event.target.id.substring(11);
+            logEvent(analytics, "slide_prev", { lang_code: langCode, to: event.target.href.substring(9, 10)});
+        },
+        false);
+}
