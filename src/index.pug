@@ -11,8 +11,8 @@ main
     input#tab_ua(type='radio' name='tabs')
     label(for="tab_ua") UA
     section#content_pt
-        include includes/content-pt.pug 
+        include:slider-filter(pt) includes/pt.txt
     section#content_en
-        include includes/content-en.pug         
+        include:slider-filter(en) includes/en.txt
     section#content_ua
-        include includes/content-ua.pug
+        include:slider-filter(ua) includes/ua.txt
