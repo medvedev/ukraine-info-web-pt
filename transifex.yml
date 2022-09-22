@@ -1,0 +1,5 @@
+git:
+  filters:
+  - filter_type: file
+    source_file: include/en.txt
+    translation_files_expression: include/<lang>.txt
