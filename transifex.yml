@@ -2,6 +2,6 @@ git:
   filters:
     - filter_type: file
       file_format: txt
-      source_file: include/en.txt
+      source_file: include/text-en.txt
       source_language: en
-      translation_files_expression: include/<lang>.txt
+      translation_files_expression: include/text-<lang>.txt
