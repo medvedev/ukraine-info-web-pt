@@ -4,4 +4,4 @@ git:
       file_format: txt
       source_file: src/includes/text-en.txt
       source_language: en
-      translation_files_expression: includes/text-<lang>.txt
+      translation_files_expression: src/includes/text-<lang>.txt
