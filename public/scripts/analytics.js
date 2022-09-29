@@ -1,7 +1,6 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+
 const firebaseConfig = {
     apiKey: "AIzaSyAbdAtYVZKuS0pzpZ1BU8u467LwaRwdUZE",
     authDomain: "web-ukraine-qr.firebaseapp.com",
